@@ -51,13 +51,13 @@ export const constantRoutes = [
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/upload'),
-      meta: { title: '文件上传', icon: 'upload' }
+      meta: { title: '文件上传', icon: 'dashboard' }
     },
     {
       path: 'upload',
       name: 'upload',
-      component: () => import('@/views/dashboard/upload'),
-      meta: { title: 'Dashboard', icon: 'dashboard' }
+      component: () => import('@/views/dashboard/list'),
+      meta: { title: '结果展示', icon: 'tree' }
     }
     ]
   },
